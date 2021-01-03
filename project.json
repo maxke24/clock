@@ -1,0 +1,56 @@
+{
+	"contentrating" : "Everyone",
+	"description" : "",
+	"file" : "index.html",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "33 33 33"
+			},
+			"size" : 
+			{
+				"editable" : true,
+				"max" : 550,
+				"min" : 100,
+				"order" : 3,
+				"text" : "Font Size",
+				"type" : "slider",
+				"value" : "192"
+			},
+			"xPosition" : 
+			{
+				"editable" : true,
+				"max" : 1550,
+				"min" : 10,
+				"order" : 1,
+				"text" : "Horizontal position",
+				"type" : "slider",
+				"value" : "960"
+			},
+			"yPosition" : 
+			{
+				"editable" : true,
+				"max" : 1050,
+				"min" : 80,
+				"order" : 2,
+				"text" : "Vertical position",
+				"type" : "slider",
+				"value" : "540"
+			}
+		}
+	},
+	"preview" : "preview.jpg",
+	"tags" : [ "Abstract" ],
+	"title" : "interactive clock",
+	"type" : "Web",
+	"version" : 2,
+	"visibility" : "public",
+	"workshopid" : "2345580221",
+	"workshopurl" : "steam://url/CommunityFilePage/2345580221"
+}
