@@ -16,7 +16,6 @@ class Vehicle{
     }
 
     show(){
-        stroke(255);
         strokeWeight(this.r);
         point(this.pos.x, this.pos.y);
     }

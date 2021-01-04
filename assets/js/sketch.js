@@ -7,14 +7,16 @@ let x = window.innerWidth/2;
 let y = window.innerHeight;
 let size = 192;
 let alignment;
+let bg = 51;
+let textColor = 255;
 
 function preload() {
   font = loadFont('assets/SourceSansPro-Regular.otf');
 }
 
 function setup(){
-    createCanvas(windowWidth, windowHeight);
-    background(51);
+    createCanvas(window.innerWidth, window.innerHeight);
+    background(bg);
     textSize(size);
     textFont(font);
     fill(255);
@@ -34,9 +36,10 @@ function setup(){
 }
 
 function draw() {
-    background(51);
+    background(bg);
     textSize(size);
     calculateTime();
+    stroke(textColor);
     for (let i = 0; i < totalVehicles.length; i++) {
         totalVehicles[i].behaviors()
         totalVehicles[i].update();
@@ -92,6 +95,15 @@ window.wallpaperPropertyListener = {
         }
         if (properties.size) {
             size = properties.size.value;
+        }
+        // Read single selected image
+        if (properties.customColor) {
+            let colors = properties.customColor.value.split(" ");
+            let r = map(colors[0], 0, 1, 0, 255);
+            let g = map(colors[1], 0, 1, 0, 255);
+            let b = map(colors[2], 0, 1, 0, 255);
+            textColor = [255 - r, 255 - g, 255 - b];
+            bg = [r, g, b];
         }
     }
 };

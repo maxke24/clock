@@ -42,6 +42,13 @@
 				"text" : "Vertical position",
 				"type" : "slider",
 				"value" : "540"
+			},
+			"customColor" :
+			{
+				"text" : "background color",
+				"type" : "color",
+				"value" : "33 33 33",
+				"order": 3
 			}
 		}
 	},
